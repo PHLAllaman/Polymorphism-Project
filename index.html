@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria</title>
+</head>
+<body>
+
+    <div class="fundo"></div>
+
+    <header class="header">
+        <h1 class="title">Pizzaria Desvendando o Código</h1>
+        <p>Explorando o Polimorfismo com JavaScript</p>
+    </header>
+
+    <main class="main-content">
+        <div class="form-container">
+            <h2>Cadastrar Pizza</h2>
+            <form id="pizza-form">
+                <input type="text" placeholder="Nome da Pizza" id="nome" required>
+                
+                <select id="tipo" required>
+                    <option value="">Selecione o tipo</option>
+                    <option value="tradicional">Tradicional</option>
+                    <option value="doce">Doce</option>
+                    <option value="vegana">Vegana</option>
+                </select>
+
+                <input type="number" placeholder="Preço (R$)" id="preco" required min="0" step="0.01">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="lista-pizzas">
+            <div class="lista-topo">
+                <h2>Nossas Pizzas</h2>
+                <button id="limpartudo" class="btn-limpar">Limpar</button>
+            </div>
+            <div id="lista" class="grid"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-title">Feito para treinar conceitos de polimorfismo</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

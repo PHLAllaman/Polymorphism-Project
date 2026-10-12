@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+body {
+    min-height: 100vh;
+}
+ 
+.fundo {
+    background: url(618283-pizza-artesanal-calabresa_inn.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+ 
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+ 
+    filter: blur(3px);
+}
+ 
+.header {
+    background-color: rgba(255, 68, 0, 0.674);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+ 
+.title {
+    font-weight: 700;
+}
+ 
+.header > p {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+ 
+.main-content {
+    padding-top: 35px;
+}
+ 
+.form-container {
+    background-color: rgb(251, 225, 219);
+    width: 90%;
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+    border-radius: 14px;
+}
+ 
+#pizza-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+#pizza-form input, #pizza-form button, #pizza-form select {
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+}
+ 
+#pizza-form > *:focus { /*selecionando todos os filhos diretos*/
+    outline: 2px solid rgb(155, 153, 153);
+}
+ 
+.form-container h2 {
+    color: rgb(199, 96, 0);
+}
+ 
+button {
+    background-color: orangered;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+}
+ 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 68, 0, 0.759);
+    border-top: 2px solid white;
+}
+ 
+.footer-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+ 
+.lista-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+ 
+.lista-pizzas {
+    max-width: 80%;
+    margin: 15px auto;
+}
+ 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+ 
+.card {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s;
+}
+ 
+.card:hover {
+    transform: scale(1.03);
+}
+ 
+.card h3 {
+    color: #d84a05;
+    margin-bottom: 0.5rem;
+}
+ 
+.card p {
+    margin-bottom: 0.3rem;
+}
+ 
+.card button {
+    margin-top: 0.6rem;
+    width: 100%;
+    background-color: #c62828;
+}
+ 
+.card button:hover {
+    background-color: #ff4040;
+}
